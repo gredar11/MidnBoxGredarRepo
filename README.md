@@ -1,5 +1,5 @@
 # MidnBoxGredarRepo
-1. [Web API на ASP.NET](https://github.com/gredar11/CookingIsSimpleWebApi "ссылка на репозиторий").
+1. [Web API на ASP.NET](https://github.com/gredar11/CookingIsSimpleWebApi "ссылка на репозиторий"). 
 2. Так как четкого формата входных данных описанно не было, то было принято передавать их через ```cs params double[] ```.
   2.1 Есть юнит тесты
   2.2 В качестве родительского класса определен абстрактный класс ```cs Figure```, который имеет бастрактный метод ```public double GetArea();``` для нахождения площади фигуры.
