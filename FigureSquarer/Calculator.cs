@@ -1,10 +1,5 @@
-﻿using FigureSquarer.AbstractFactory;
+﻿using FigureSquarer.Factory;
 using FigureSquarer.Figures;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FigureSquarer
 {
@@ -16,6 +11,7 @@ namespace FigureSquarer
             Figure figure = figureFactory.CreateFigure(incomingValues);
             return figure.GetArea();
         }
+
         public static FigureFactory GetFigureFactory(params double[] doubles)
         {
             if (doubles.Length == 1)
@@ -28,6 +24,7 @@ namespace FigureSquarer
             }
             throw new Exception($"Неверные входные данные [{string.Join(", ", doubles)}]");
         }
+
         public static double CalculateAreaOfFigure(Figure calculableFigure)
         {
             return calculableFigure.GetArea();

@@ -1,11 +1,6 @@
-﻿using FigureSquarer.AbstractFactory;
-using FigureSquarer.Exceptions;
+﻿using FigureSquarer.Exceptions;
+using FigureSquarer.Factory;
 using FigureSquarer.Figures;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FigureSquarerTests
 {

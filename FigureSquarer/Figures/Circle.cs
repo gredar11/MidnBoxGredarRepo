@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-namespace FigureSquarer.Figures
+﻿namespace FigureSquarer.Figures
 {
     public class Circle : Figure
     {
@@ -18,6 +11,7 @@ namespace FigureSquarer.Figures
                 radius = value;
             }
         }
+
         public Circle(double radius)
         {
             Radius = radius;

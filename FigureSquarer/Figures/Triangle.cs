@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace FigureSquarer.Figures
 {
     public class Triangle : Figure
     {
         private double[] edgesLengths;
+
         [Required]
         public double[] EdgesLengths
         {
@@ -21,13 +17,16 @@ namespace FigureSquarer.Figures
                 edgesLengths = value;
             }
         }
+
         public Triangle(double[] edges) => EdgesLengths = edges;
+
         public override double GetArea()
         {
             double halfOfPerimeter = (EdgesLengths.Sum() / 2.0);
             double area = Math.Sqrt(halfOfPerimeter * (halfOfPerimeter - EdgesLengths[0]) * (halfOfPerimeter - EdgesLengths[1]) * (halfOfPerimeter - EdgesLengths[2]));
             return area;
         }
+
         public bool IsTriangeRight()
         {
             var listOfLengts = EdgesLengths.ToList();

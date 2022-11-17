@@ -1,12 +1,7 @@
 ﻿using FigureSquarer.Exceptions;
 using FigureSquarer.Figures;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace FigureSquarer.AbstractFactory
+namespace FigureSquarer.Factory
 {
     public class TriangleFactory : FigureFactory
     {
